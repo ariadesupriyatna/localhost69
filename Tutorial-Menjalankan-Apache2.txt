@@ -1,0 +1,28 @@
+#install dulu apachenya
+pkg install apache2
+
+#jalanin apache2
+apachectl
+
+#cek apakah sudah berjalan
+ps aux
+
+#pastikan berjalan di browser
+http://localhost:8080/
+
+#lihat folder htdocs
+cd $PREFIX/share/apache2/default-site/htdocs/
+
+#ubah file index.html
+nano index.html
+
+#ubah port localhost
+nano $PREFIX/etc/apache2/httpd.conf
+
+#stop apache2
+apachectl -k stop
+
+
+#tahapan tingkat lanjut di sinih,,oprek2
+nano $PREFIX/etc/apache2/httpd.conf
+

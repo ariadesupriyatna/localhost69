@@ -1,0 +1,15 @@
+
+#install python3 dulu
+pkg install python3
+
+#jalankan http servernya
+python3 -m http.server 8080
+
+#cek dengan curl, lihat respon
+curl -I http://localhost:8080/
+
+#buka di browser
+http://localhost:8080/nama.html
+
+#hentikan server ketik
+tekan layar, lalu pilih kill

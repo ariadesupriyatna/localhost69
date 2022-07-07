@@ -1,0 +1,17 @@
+#install nginx
+pkg install nginx
+
+#masuk ke sini
+cd /data/data/com.termux/files/usr/share/nginx/html
+
+#buat file html
+touch ganteng.html
+
+#jalankan nginx
+nginx
+
+#lihat di browser
+buka http://localhost:8080/ganteng.html
+
+#stop nginx
+nginx -s stop

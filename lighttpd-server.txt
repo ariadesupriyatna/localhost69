@@ -1,0 +1,30 @@
+
+#install lighttpd
+pkg install lighttpd
+
+#buat file .conf
+tounch lighttpd.conf
+
+#buka browser
+https://github.com/termux/termux-packages/issues/858
+
+#copy paste code ke file lighttpd.conf
+bebas cara copy pastenya manual atau shortcut
+
+#ijinkan akses sdcard
+termux-setup-storage
+
+#buat folder
+mkdir /sdcard/docs
+
+#masuk folder docs
+cd /sdcard/docs
+
+#buat file html
+touch test.html
+
+#start server lighttpd
+lighttpd -f lighttpd.conf
+
+#buka browser
+http://localhost:8080/test.html
